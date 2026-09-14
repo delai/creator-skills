@@ -1,0 +1,72 @@
+# 默认术语表：脚本会自动加载本文件，再叠加 --glossary 传入的内容。
+#
+# 两种写法：
+#   错误写法1, 错误写法2 → 正确写法     语音识别常错成同音/近音词的，写成映射
+#   正确写法                            只是告诉 agent 这个词的官方写法
+#
+# 只收「语音识别真的会搞错」的词。写得越具体，纠错越准，也越不容易被臆改。
+
+# --- AI 工具 ---
+coso, cos, coser, 卡索, 靠瑟 → Cursor
+web coding, web 编码, 网页编码 → vibe coding
+克劳德, 克拉, 劳德 → Claude
+claude code, 克劳德 code → Claude Code
+kimi, 奇米, 齐米 → Kimi
+codex, 考德克斯 → Codex
+copilot, 副驾驶 → Copilot
+奥特曼 → Altman
+一 gent, 阿真特 → agent
+思壳, 斯基尔 → skill
+普罗恩普特 → prompt
+
+# --- 设计/开发工具 ---
+figma, 菲格玛, 费格马 → Figma
+mastergo, 马斯特狗 → MasterGo
+sketch, 斯凯奇 → Sketch
+奥特雷阿 → auto layout
+nuxt, 那克斯特 → Nuxt
+vue, 维尤 → Vue
+react, 瑞艾克特 → React
+
+# --- 自家产品 ---
+refore, 瑞福, 睿福 → Refore
+demoway, 德莫维 → DemoWay
+
+# --- 常见英文缩写（识别成中文谐音时纠回来）---
+GUI
+API
+SaaS
+PMF
+OKR
+MVP
+UED
+token
+Prompt
+
+# --- 组合名 / 复合词：断句时**整体保护**，不许被切在两条字幕里 ---
+# 这一段和上面的作用不同：上面是「纠错时写成什么」，这里是「断句时不许从中间劈开」。
+# 带空格的组合名尤其依赖它——jieba 和 token 边界都拦不住 "Refore HTML | to Figma"。
+Refore HTML to Figma
+Refore HTML to MasterGo
+HTML to Figma
+HTML to MasterGo
+HTML to Design
+Claude Desktop
+Claude Code
+WorkBuddy
+MCP server
+Pixso
+即时设计
+JSDesign
+浏览器插件
+自定义连接器
+设计稿
+登录页
+列表页
+工作流
+提示词
+配置文件
+命令行
+快捷键
+截图
+录屏

@@ -1,0 +1,6 @@
+# Runtime artifacts may contain private source material.
+__pycache__/
+*.py[cod]
+.DS_Store
+.subtitle_cache/
+.subtitle_tasks/
